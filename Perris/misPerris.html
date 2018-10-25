@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Mis Perris
+		</title>
+		<link href="flexboxgrid-6.3.1/flexboxgrid.min.css" rel="stylesheet">
+		<link href="flexboxgrid-6.3.1/style.css" rel="stylesheet">
+		<link href="styles.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="jR3DCarousel.js"></script>
+		<script src="script.js"></script>
+		
+
+
+		<script>
+		
+			$(document).ready(function()
+			{
+				var nom
+				nom=prompt("Escribe tu nombre", "Usuario")
+				alert('Bievenido ' + nom).fadeToggle();
+			});
+
+			$(document).ready(function()
+			{
+				$(".text-block").click(function(){	
+					$("#pewo0").hide(2000);	
+					$("#pewo").hide(1500);
+				});
+
+			});
+			
+			$(document).ready(function()
+			{
+				$(".fotocomida").click(function(){	
+				$("#foto2").attr("/home/baha/Desktop/Solemne 11Sept/img/hdogs/happy4.jpg");	
+					
+				});
+
+			});
+
+
+
+
+			$(document).ready(function()
+			{
+				$("#camp").click(function(){	
+					$("#camp1").toggle(1000);	
+				});
+
+			});
+	
+
+			$(function(){
+
+			$('a[href=#]').click(function() {
+
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+			&& location.hostname == this.hostname) {
+
+			var $target = $(this.hash);
+
+			$target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+			if ($target.length) {
+
+			var targetOffset = $target.offset().top;
+
+			$('html,body').animate({scrollTop: targetOffset}, 10000000);
+
+			return false;
+
+	   		}
+
+  			}
+
+			});
+
+			});
+
+		</script>
+		
+
+
+	</head>
+	
+	<body>
+		
+		<div class="row ceroColor">
+			<div class="col-xs-12 center-lg center-xs center-sm">
+				<h6>13 de septiembre, 2018 - Solemne 1~</h6>
+			</div>
+		</div>
+
+
+	
+		<div class="row primerColor">
+			<div class="col-xs-12 col-sm-4 center-xs">
+			
+				<div class="Logo" >
+					<img src="img/logo.png" alt="Logo Perrins" style="width: 90%">
+				</div>
+			</div>
+		</div>	
+
+
+			
+		<div class="row nav">
+			<div class="col-xs-8
+						col-xs-offset-4 
+						center-xs">	
+		<nav>
+								
+			<ul>
+			<li><a href="validar.html">Registro</a></li>
+			<li><a href="#coach">Quienes somos</a></li>
+			<li><a href="#eetcafe">Servicios</a></li>
+			<li><a href="#cont">Contáctanos</a></li>
+			</ul>
+								
+		</nav>
+			</div>
+		</div>
+				
+		
+		
+		<div class="row carrusel" >
+		<div class="col-xs-6
+					col-xs-offset-3
+					center-xs
+					carousel-demo">
+			<script>
+				var slides = [
+					{src: '/home/baha/Desktop/Solemne 11Sept/img/hdogs/Happy1.jpg'},
+					{src: '/home/baha/Desktop/Solemne 11Sept/img/hdogs/happy2.jpg'},
+					{src: '/home/baha/Desktop/Solemne 11Sept/img/hdogs/happy3.jpg'},
+					{src: '/home/baha/Desktop/Solemne 11Sept/img/hdogs/happy4.jpg'}
+				];
+				$('.carousel-demo').jR3DCarousel({
+				  width : 600,        
+				  height: 450,    
+				  slides: slides,
+				  animation: "slide"
+				  
+				  
+				});
+			</script>
+			</div>
+		</div>
+		
+
+
+	<div class="row barraSocial">
+		<div class="col-xs-12
+					col-xs-offset-7">
+		<section id="social">
+					
+				<button style="font-size:34px"><a href="http://facebook.com" class="fa fa-facebook-official"></a></button>	
+				<button style="font-size:34px"><a href="http://instagram.com" class="fa fa-instagram"></a></button>	
+				<button style="font-size:34px"><a href="http://google.com" class="fa fa-google-plus-circle"></a></button>	
+				<button style="font-size:34px"><a href="http://twitch.com" class="fa fa-twitch"></a></button>	
+					
+	
+		</section>
+		</div>
+	</div>
+
+
+<div class="row rescate">
+	<div class="col-xs-12
+				col-xs-offset-0">
+  
+	<section class="lefta">
+
+	  <h2 id="coach" style="text-align: left"> Rescate </h2>
+	  <h4 class="subtitulo" style="text-align: left">De que se trata</h4>
+	  <hr>
+	  <p style="text-align: justify; color: rgb(4, 61, 4)">Rescatamos perros en situación de peligro y/o abandono. Los rehabilitamos y los preparamos para buscarles un hogar.
+	  </p>
+	  <div class="col-lg
+	  ">
+	  <div class="container">
+	  <img src="img/rescate.jpg" alt="Perro Negro" style="width: 50%;">
+	  <div class="text-block">
+		<h4 id="pewo0" style="font-size: 32px; color: white; border-color: chocolate">Un perro renovado</h4>
+		<p id="pewo" style="font-size: 32px; color: white; border-color: chocolate">Hermoso</p>
+	  </div>
+	  </div>
+	</div>
+	</div>	
+	
+	
+	</section>
+
+</div>
+
+
+
+<div class="row cfunding">
+	<div class="col-xs-12
+				col-xs-offset-0">
+
+	<section class="right">
+
+
+	<div class="container2">
+	  
+	<a href="" title="CAMBIO" class="fotocomida"></a>
+	<h3 style="font-size: 32px; color:rgb(3, 90, 3); border-color: black; text-align: center;">Comida Optima</h3>
+		<div class="col-lg">
+	<img src="img/crowfunding.jpg"  id="foto2">
+		</div>
+		
+	</div>
+
+
+	  <h2 id="eetcafe" style="text-align: center">CROWDFUNDING</h2>
+	  <p class="subtitulo" style="text-align: center">Financiamiento</p>
+	  <hr>
+	  <p style="text-align: center">
+		Sigue nuestras redes sociales para informarte acerca de las diversas campañas y actividades que realizamos para obtener financiamiento para seguir ayudando.
+	  </p>
+	  
+	 
+	 <button id="camp" type="button" name="button">CAMPAÑAS</button>
+	  <p id="camp1"> Aqui se muestran las campanias</p>
+	  
+
+
+	</section>
+</div>
+</div>
+
+<div class="row contenido">
+	<div class="col-xs-12">
+  		<section id="content">
+			<section id="cont">
+		
+			</section>
+
+		<footer>
+	  		<address>
+				<p style="text-align: center; font-size: 24px"> <b>+ 56 9 98765431</b></p>
+	 		</address>
+	    </footer>
+	  <section id="slogan">
+		<p style="text-align: center"><b>Rescate y adopción de perros callejeros</b></p>
+	  </section>
+
+	  		</section>
+	
+	</div>
+</div>
+
+
+<div class="row creditos">
+	<div class="col-xs-12">
+  
+	<footer id="credits" style="height: 20px">
+	<p style="text-align: center"> Desarrollo Web y Mobile</p>
+  </footer>
+</section>
+</div>
+</div>
+</div>
+	
+</body>
+</html>
