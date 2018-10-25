@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro mis Perris</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="validar.js"></script>
+    <link rel="stylesheet" href="validar.css" >
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <script>
+    
+    
+    $( function() {
+    var availableTags = [
+      "willo",
+      "Emilio",
+      "Hola",
+
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+
+    </script>
+
+
+
+
+</head>
+<body>
+
+
+
+<div class= "primerColor"> 
+
+    <div class="col-xs-12 col-sm-4 center-xs">
+                <img src="img/logo.png" >
+            </div>
+    
+    
+    <br>
+    <label for="tags">Nombre autocompletar:  </label>
+    <p></p>
+    <div class="txtNombre soloNombre center-xs">          
+            <input id="tags">
+
+    
+    <p></p>
+
+      </div>
+
+
+    <p>Apellido</p>
+        <input type="text"      name="txtApellido"      class="txtApellido soloApellido">
+    <p>Fecha de nacimiento</p>            
+        <input type="text"      name="txtEdad"          class="txtEdad soloNumero">
+    <p>Telefono</p>    
+        <input type="number"    name="txtTele"          class="txtTele soloTelefono">
+    <p>RUT</p>
+        <input type="number"    name="txtRut"           class="txtRut soloRut">
+
+        <p>Correo</p>
+      <input type=text  name=txtEmail class="txtEmail email">
+
+<input type=button class=btnAceptar value=Aceptar>
+
+</div>
+
+</body>
+</html>

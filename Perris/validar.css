@@ -1,0 +1,17 @@
+body{
+    background: #6dccaa;
+}
+.primerColor{ background: #2ece96; 
+    color       : white;
+    font-family : calibri;
+    font-weight : bold;
+    font-size   : 24px;
+}
+
+#tags {
+
+    color:black;
+    font-size: 15px;
+    font-style: italic; 
+
+}
