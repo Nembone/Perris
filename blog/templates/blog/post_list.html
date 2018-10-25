@@ -166,6 +166,21 @@
 		</div>
 	</div>
 
+    <div class="row Post">
+    		<div class="col-xs-12
+					col-xs-offset-7">
+            <div> 
+            
+            {% for post in posts %} 
+                <h1> Posteos por Django </h1>
+                <h4> Titulo del Post: {{ post.title }} </h4>
+                <h4> Publicado: {{ post.published_date }} </h4>
+                <h4> {{ post.text|linebreaks }}
+            {% endfor %}
+
+		    </div>
+	</div>
+
 
 <div class="row rescate">
 	<div class="col-xs-12
